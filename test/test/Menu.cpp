@@ -347,6 +347,11 @@ void adicionarAcidenteViacao() {
 
 	cout << "Qual o local do acidente? (0 - autoestrada ou 1 - estrada nacional)";
 	cin >> ae;
+	while (ae != 0 || ae != 1)
+	{
+		cout << "Local invalido, 0 - autoestrada ou 1 - estrada nacional\n";
+		cin >> ae;
+	}
 	cout << "Qual a localizacao do acidente?";
 	cin >> local;
 	cout << "\nQuando e que se passou esse acidente? ";			//Melhorar depois
@@ -385,6 +390,10 @@ void adicionarAcidenteViacao() {
 	return;
 }
 
+void removerAcidentes() {
+
+
+}
 
 
 void verOsAcidentes() {

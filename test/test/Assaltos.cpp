@@ -31,13 +31,13 @@ Assaltocomercial::Assaltocomercial(string localAcidente, int data, double x, dou
 
 void Assaltocomercial::printAcid() {
 	cout << "Acidente tipo: Assalto comercial em " << localAcidente << "na localizacao x = " << coord.first << " y = " << coord.second << " em " << data << endl;
-	cout << " no qual houveram " << numFeridos << " Feridos " << endl << endl;
+	cout << " no qual resultaram " << numFeridos << " Feridos " << endl << endl;
 
 }
 
 void Assaltoparticular::printAcid() {
 	cout << "Acidente tipo: Assalto particular em " << localAcidente << "na localizacao x = " << coord.first << " y = " << coord.second << " em " << data << endl;
-	cout << " no qual houveram " << numFeridos << " Feridos " << endl << endl;
+	cout << " no qual resultaram " << numFeridos << " Feridos " << endl << endl;
 
 }
 

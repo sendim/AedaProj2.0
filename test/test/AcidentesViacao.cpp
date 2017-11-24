@@ -9,9 +9,7 @@ AcidenteViacao::AcidenteViacao(string localAcidente, int ae, int data, double x,
 	this->numFeridosGraves = numFeridosGraves;
 	this->numVeiculosEnvolv = numVeiculosEnvolv;
 	this->ae = ae;
-	setNumCarros(numCarrosNecessarios());
-	setNumMotos(numMotosNecessarias());
-	setNumAmbulancias(numAmbulanciasNecessarias());
+
 }
 
 
@@ -46,10 +44,10 @@ int AcidenteViacao::numAmbulanciasNecessarias() {
 void AcidenteViacao::printAcid() {
 	if (ae == 0) {
 cout << "Acidente tipo: Acidente viacao em estrada nacional em " << localAcidente << "na localizacao x = " << coord.first << " y = " << coord.second << " em " << data << endl;
-	cout << " no qual houveram " << numFeridosGraves << " Feridos " << endl << endl;
+	cout << " no qual resultaram " << numFeridosGraves << " Feridos " << endl << endl;
 	return;
 	}
 	cout << "Acidente tipo: Acidente viacao em autoestrada " << localAcidente << "na localizacao x = " << coord.first << " y = " << coord.second << " em " << data << endl;
-	cout << " no qual houveram " << numFeridosGraves << " Feridos " << endl << endl;
+	cout << " no qual resultaram " << numFeridosGraves << " Feridos " << endl << endl;
 
 }

@@ -10,6 +10,7 @@ void verOsPostos();
 void addIncendio();
 void addAssalto();
 void verOsAcidentes();
+void removerAcidentes();
 void adicionarIncendioFloresta();
 void adicionarIncendioApartamento();
 void adicionarIncendioMoradia();
